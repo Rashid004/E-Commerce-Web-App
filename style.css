@@ -2,8 +2,9 @@
 
 :root { 
   --color-primary:#e3e6f3 ;
-  /* --color-secondary:#1a1a1a ;
-  --color-tertiary: ; */
+  --color-secondary:#1a1a1a ;
+  --color-tertiary:#088178;
+  --color-fifth:##cce7d0;
 }
 
 
@@ -52,7 +53,7 @@ p {
   margin: 1.5rem 0 2rem 0;
 }
 
-.section-p1 {
+#section-feature {
   padding: 4rem 8rem;
 }
 
@@ -63,17 +64,25 @@ p {
 /* Section Header */
 
 .header {
- display: flex;
+ /* display: flex;
  justify-content: space-between;
- align-items: center; 
- padding: 2rem 8rem;
+ align-items: center;  */
+ /* padding: 2rem 8rem; */
  box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,0.06);
  background-color: #e3e6f3;
 }
-
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8rem;
+  width: 100%;
+  z-index: 100;
+  padding: 0px 6rem;
+}
 .nav.sticky {
   position: fixed;
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: #e3e6f3;
 }
 
 .nav-bar {
@@ -93,7 +102,7 @@ p {
   font-size: 1.6rem;
   font-weight: 600;
   color: #1a1a1a;
-  transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in;
 }
 .nav-bar li a:hover, 
 .nav-bar li a.active{
@@ -110,7 +119,9 @@ background-color: #088178;
 bottom: -4px;
 left: 2rem;
 }
-
+.nav-logo {
+height: 4rem;
+}
 /* Section Hero */
 .hero {
   background-image: url(img/hero4.png);
@@ -145,4 +156,44 @@ left: 2rem;
 }
 .btn-hero:hover {
  color: #088176;
+}
+
+/* Section Feature */
+.features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.feature-box {
+ max-width:18rem;
+ padding: 2.5rem 1.5rem;
+ text-align: center;
+ box-shadow: 2rem 2rem 3.4rem rgba(0,0,0,0.03);
+ border: 1px solid #cce7d0;
+ border-radius: 0.4rem;
+ margin: 1.5rem 0;
+}
+
+.feature-box:hover {
+ box-shadow: 1rem 1rem 5.4rem 
+ rgba(70, 62, 222, 0.01);
+}
+.feature-box img {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.feature-btn {
+  display: inline-block;
+  padding: 0.9rem 0.8rem 0.6rem 0.8rem;
+  line-height: 1;
+  border-radius: 0.5rem;
+  color: #088176;
+  background-color: #f1f3f5;
+  cursor: pointer;
+  border: 0;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.feature-btn:hover {
+ background-color: #dee2e6;
 }
