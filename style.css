@@ -59,11 +59,36 @@ p {
   padding: 4rem 4rem;
 }
 
-.section-m1 {
+#section-m1 {
   margin: 4rem 0;
 }
+.normal-btn {
+ font-size: 1.4rem;
+ font-weight: 600;
+ color: #000;
+ background-color: #fff;
+ cursor: pointer;
+ border: none;
+ outline: none;
+ padding: 1.6rem 3.2rem;
+ border-radius: 0.6rem;
+ transition: 0.2s;
+}
+.white-btn {
+ font-size: 1.4rem;
+ font-weight: 600;
+ color: #fff;
+ background-color:transparent;
+ cursor: pointer;
+ border: 1px solid #fff;
+ outline: none;
+ padding: 1rem 1.8rem;
+ transition: 0.2s;
+}
 
+/* ////////////// */
 /* Section Header */
+/* ///////////////// */
 
 .header {
  /* display: flex;
@@ -307,4 +332,223 @@ height: 4rem;
   bottom: 2rem;
   border: 1px solid #cce7d0;
   font-size: 1.5rem;
+}
+/* //////////////////// */
+/* Banner */
+/* //////////////////// */
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(img/banner/b2.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 40vh;
+}
+.sub-heading {
+  color: #fff;
+  font-size: 1.6rem;
+}
+.heading-secondry {
+  font-size: 3rem;
+  color: #fff;
+  padding: 1rem 0;
+}
+.heading-secondry span {
+  color: #ef3636;
+}
+.banner .normal-btn:hover {
+  background-color: #088178;
+  color: #fff;
+}
+
+/* small banner */
+ .sm-banner{
+ display: flex; 
+ justify-content: space-between;
+ flex-wrap: wrap;
+}
+ .banner-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: url(img/banner/b17.jpg);
+  background-size: cover;
+  background-position: center;
+  min-width: 54rem;
+  height: 50vh;
+  padding: 3rem;
+}
+.banner-box2 {
+  background-image: url(img/banner/b10.jpg);
+}
+
+.banner-box h4 {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 300;
+}
+.banner-box h2 {
+  color: #fff;
+  font-size: 2.8rem;
+  font-weight: 800;
+}
+.banner-box span {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding-bottom: 1.5rem;
+}
+.banner-box:hover button {
+  background-color: #088178;
+  border: 1px solid #088178;
+}
+/* Banner Third */
+.banner-third {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 4rem;
+  /* margin-bottom: 1rem; */
+}
+.banner-third .banner-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: url(img/banner/b7.jpg);
+  background-size: cover;
+  background-position: center;
+  min-width: 30%;
+  height: 30vh;
+  padding: 2rem;
+  margin-bottom: 2rem;
+} 
+.banner-third .banner-box__2 {
+  background-image: url(img/banner/b4.jpg);
+}
+.banner-third .banner-box__3 {
+  background-image: url(img/banner/b18.jpg);
+}
+.banner-third .banner-box h2 {
+  color: #fff;
+  font-size: 2.2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.banner-third .banner-box h3 {
+  color: #ef544e;
+  font-size: 1.4rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+/* //////////////// */
+/* News letter section */
+/* ///////////////// */
+
+.news-letter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-image: url(img/banner/b14.png);
+  background-repeat: no-repeat;
+  background-position: 20% 30%;
+  background-color: #041e42;
+  margin: 4rem 0;
+}
+
+.news-heading {
+  font-size: 2.2rem;
+  color: #fff;
+  font-weight: 700;
+}
+.news-description {
+  font-size: 1.4rem;
+  color: #818ea0;
+  font-weight: 600;
+}
+.news-description span{
+  color: #ffbd27;
+  cursor: pointer;
+}
+.form {
+  display: flex;
+  justify-content: center;
+}
+.form input {
+  height: 5rem;
+  width: 100%;
+  padding: 0 1.25em;
+  font-size: 1.4rem;
+  border: 1px solid transparent;
+  border-radius: 0.4rem;
+  outline: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.form .normal-btn {
+  background-color: #088178;
+  color: #fff;
+  white-space: nowrap;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+/* ////////////// */
+/* Footer Section */
+/* ///////////// */
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 1.6rem;
+}
+footer .logo {
+  margin-bottom: 3rem;
+}
+
+footer .footer-columns {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+footer .footer-heading {
+  font-size: 1.4rem;
+  padding-bottom: 2rem;
+}
+footer .footer-description {
+  font-size: 1.3rem;
+  margin: 0 0 0.8rem 0;
+}
+footer a {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #222;
+  text-decoration: none;
+  line-height: 1.5;
+}
+.icon-list {
+  margin-top: 2rem;
+}
+footer .icon-list {
+  color: #465b52;
+  padding-right: 0.4rem;
+  cursor: pointer;
+}
+.icon-list i {
+  font-size: 1.6rem;
+  padding: 0 0.3rem;
+}
+.row img {
+ border: 1px solid #088178;
+ border-radius: 0.6rem;
+}
+.install {
+  margin: 1rem 0 1.5rem 0;
 }
