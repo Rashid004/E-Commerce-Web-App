@@ -2,31 +2,43 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+  <!-- <meta http-equiv="X-UA Compatible" content="IE=edge"> -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+  <link rel="stylesheet" href="queries.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="General.css">
+  
   <title>E-Commerce Web</title>
 </head>
 <body>
-  <header class="header">
+  <header class="header"> 
     <nav class="nav">
       <img class="nav-logo" src="img/logo.png" alt="logo">
-      <ul class="nav-bar">
+      <ul class="nav-bar  active">
           <li class="nav-items"><a class="active" href="index.html">Home</a></li>
           <li class="nav-items"><a href="shop.html">Shop</a></li> 
           <li class="nav-items"><a href="about.html">About</a></li>
           <li class="nav-items"><a href="contact.html">Contact</a></li>
           <li class="nav-items"><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+          <a href="#"><i id="close" class="far fa-times"></i></a>
       </ul>
+      <div class="mobile">
+        <a href="cart.html"><i class="far fa-shopping-bag"></i></a>
+         <i id="bar" class="fas fa-outdent"></i>
+       </div> 
     </nav>
   </header>
+  <main > 
   <section class="hero">
+   <div>
     <h4>Trade-in-offer</h4>
     <h2>Super value deals</h2>
     <h1>On all products</h1>
     <p>Save more with coupons & upto 70% off!</p>
     <button class="btn-hero">Shop now</button>
+   </div>
   </section>
    <section class="features" id="section-feature">
     <div class="feature-box">
@@ -421,9 +433,11 @@
      <img src="img/pay/pay.png" alt="Payment Method">
     </div>
     <div class="copyright">
-      <p class="footer-description"></p>
+      <p class="footer-description"><a href="#">&copy copyright 2023 A privacy This is real E-commerce Website.</a></p>
     </div>
    </footer>
+  </main>
+  
 <script src="script.js"></script>
 </body>
 </html>
